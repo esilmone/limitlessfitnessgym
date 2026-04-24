@@ -28,7 +28,7 @@
 <!-- add a skip link that skips to the main content -->
 <!-- add correct heading levels -->
   <header>
-    <a class="skip-to-content" href="#">Skip to main content</a>
+    <a class="skip-to-content" href="#main">Skip to main content</a>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
       <path d="M2 12h1"></path>
       <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2"></path>
@@ -111,21 +111,34 @@
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        <input type="submit" id="submit">
+        <form>
+          <label for="fName">Full Name</label>
+          <input type="text" id="fName">
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email">
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone">
+
+          <label for="memType">Membership Type</label>
+          <select id="memType">
+          <option value="1">Select a Membership Option</option>
+          <option value="2">Monthly Membership</option>
+          <option value="3">Annual Membership</option>
+          <option value="4">Family & Group Plans</option>
+          </select>
+
+          <label for="fitGoals">Tell us about your fitness goals:</label>
+          <textarea id="fitGoals"></textarea>
+          
+          <input type="submit" id="submit">
+        </form>
       </section>
     </section>
   </main>
   <aside>
-    Testimonials
+    <h2>Testimonials</h2>
     <q>
       Joining Limitless Fitness has completely transformed my approach to fitness. The supportive community and expert guidance have made all the difference! - Alex R.
     </q>
@@ -135,7 +148,7 @@
   </aside>
   <footer>
     <section>
-      Stay connected
+      <h2>Stay connected</h2>
       <ul>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
@@ -155,7 +168,7 @@
       </ul>
     </section>
     <section>
-      Contact Us
+      <h2>Contact Us</h2>
       <address>
         <p>1234 HIIT St. <br>
         Mesa, AZ 85222 <br>
