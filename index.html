@@ -3,25 +3,26 @@
 <head>
 <!-- add required and recommended <meta> tags -->
  <meta charset="utf-8">
+ <meta name="viewport" content="">
  <meta name="author" content="Einna Silmone">
- <meta name="description" content="">
+ <meta name="description" content="Start your membership with Limitless Fitness Gym today! Take your fitness to the next level with personalized training, top-of-the-line equipment, and a supportive community. ">
 
- <meta name="twitter:card" content="">
- <meta name="twitter:url" content="">
- <meta name="twitter:" content="">
- <meta name="twitter:" content="">
- <meta name="twitter:" content="">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:description" content="Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.">
+ <meta name="twitter:title" content="Transform Your Life at Limitless Fitness">
+ <meta name="twitter:site" content="www.limitlessfitness.com">
+ <meta name="twitter:image" content="www.thisiswhereidputtheimagelink.com">
+ <meta name="twitter:creator" content="Einna Silmone">
 
- <meta property="og:">
- <meta property="og:">
- <meta property="og:">
- <meta property="og:">
- <meta property="og:">
+ <meta property="og:url" content="website">
+ <meta property="og:type" content="www.limitlessfitness.com">
+ <meta property="og:title" content="Limitless Fitness Gym">
+ <meta property="og:description" content="Transform Your Life at Limitless Fitness">
+ <meta property="og:image" content="www.thisiswhereidputtheimagelink.com">
  
  <link rel="stylesheet" href="style.css">
-
- <title></title>
-
+ <script src="#"></script>
+ <title>Limitless Fitness Gym</title>
 
 </head>
 <body>
@@ -41,14 +42,17 @@
     <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#">Join Now</a>
+
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
-
+    <picture>
+      <source media="(min-width: 768px)" srcset="images/facility-768w.jpg">
+      <source media="(min-width: 320px)" srcset="images/facility-320w.jpg">
+      <img src="images/facility.jpg" alt="image of fitness gym equipment">
+    </picture>
   </header>
   <nav>
-    <h2>Main Navigation
+    <h2>Main Navigation</h2>
     <ul>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Classes</a></li>
@@ -82,10 +86,14 @@
         <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
         <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
       </ul>
+
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
-
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/classes-768w.jpg">
+          <source media="(min-width: 320px)" srcset="images/classes-320w.jpg">
+          <img src="images/classes.jpg" alt="image of people taking a weights class">
+        </picture>
     </section>
     <section>
       <h2>Personal Training</h2>
@@ -94,10 +102,14 @@
         Ready for a change?
       </p> 
       <a href="#">Book a Free Consultation today!</a>
+
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/dumbells.jpg"
-
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/dumbells-768w.jpg">
+          <source media="(min-width: 320px)" srcset="images/dumbells-320w.jpg">
+          <img src="images/dumbells.jpg" alt="image of dumbells">
+        </picture>
     </section>
     <section>
       <h2>Membership Options</h2>
@@ -111,7 +123,7 @@
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
-        <form>
+        <form method="https://wp.zybooks.com/form-viewer.php" action="post">
           <label for="fName">Full Name</label>
           <input type="text" id="fName">
 
